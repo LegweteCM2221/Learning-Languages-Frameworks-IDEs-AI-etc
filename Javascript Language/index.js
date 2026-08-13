@@ -118,6 +118,8 @@ list of operators by preference
 //username = window.prompt("What is your User Name");
 //console.log(username);
 //document.getElementById("mybtn").onclick= function(){
+
+
   //assigning the username to input
  //username = document.getElementById("mytxt").value;
 //Outputing the username using textContent of myid = header 
@@ -175,26 +177,39 @@ list of operators by preference
 const decrease = document.getElementById("btndec");
 const increase = document.getElementById("btninc");
 const reset = document.getElementById("btnreset");
-const counter = document.getElementById("lblcount")
-
+const counter = document.getElementById("lblcount");
 let count = 0;
 
 increase.onclick = function(){
   count++;
   counter.textContent = count
 }
-
+  let count2 =1;
+  
 decrease.onclick = function(){
   count--;
+
   if(count < 0){
-    count = 0
+    count = 0;
+    count2 +=1 ;
+    if(count2> 1){
+      window.alert("Shame on You for double clicking")
+    }
     window.alert("Negative Only Exists In Math Buddy")
   }
   counter.textContent = count
 }
-reset.onclick = function(){
+
+reset.onclick = function()
+{
   count = 0;
   counter.textContent = count
 }
+// math a built on pbject that provies a collectopn of properties and methods 
+// tesiting
 
+//let x = 3.24
+//let y = 3;
+//let c;
 
+//c = Math.floor()

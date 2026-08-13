@@ -9,7 +9,7 @@
     text-align: center;
     
 }
-/* Buttons class */
+/* Buttons class . classes #for specific */
 .btns{
     padding: 10px 20px; /* Layer around each button */
     font-size: 1.5em; /* size in text */
@@ -22,5 +22,20 @@
 /* When Hovering Over a Button */
 .btns:hover{
     background-color: black;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#mybtn{
+    font-size: 2.4em;
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+#mylbl{
+    font-size: 2em;
 }
 /*  */
