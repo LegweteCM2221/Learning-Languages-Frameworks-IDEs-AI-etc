@@ -57,15 +57,23 @@ let z ;
 //NB will not work ------let randomnum = Math.floor(Math.random(max,min));
 //console.log(randomnum);
 
-let mybutton = document.getElementById("mybtn");
-let mylabel = document.getElementById("mylbl");
-let max = 6;
-let min = 1;
+const  mybutton = document.getElementById("mybtn");
+const mylabel = document.getElementById("mylbl");
+const mylabel2 = document.getElementById("mylbl2");
+const mylabel3 = document.getElementById("mylbl3");
+const max = 6;
+const min = 1;
 let Rnum;
+let Rnum2;
+let Rnum3;
 
 mybutton.onclick =function()
 {
-    Rnum =  Math.floor(Math.random()*max) + min;
-    mylabel.textContent = Rnum
+Rnum =  Math.floor(Math.random()*max) + min;
+Rnum2 =  Math.floor(Math.random()*max) + min;
+Rnum3 =  Math.floor(Math.random()*max) + min;
+mylabel.textContent = Rnum;
+mylabel2.textContent = Rnum2;
+mylabel3.textContent = Rnum3;
 }
-   
+
